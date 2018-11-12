@@ -41,6 +41,8 @@ public class MainActivity extends AppCompatActivity {
 
     private void initData() {
         mDemoList.add(new ItemBean("LinearLayout", LinearLayoutDemoActivity.class));
+        mDemoList.add(new ItemBean("RelativeLayout", RelativeLayoutDemoActivity.class));
+        mDemoList.add(new ItemBean("CustomView", ShowCustomViewActivity.class));
     }
 
     static class ItemBean {

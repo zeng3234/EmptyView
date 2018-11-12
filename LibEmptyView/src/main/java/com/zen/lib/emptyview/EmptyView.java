@@ -67,7 +67,7 @@ public class EmptyView {
     }
 
     public void hideEmptyView() {
-        if (mEmptyView != null) {
+        if (mEmptyView != null && isEmptyAttach) {
             layoutParams.height = mLastHeight;
             ((ViewGroup) mEmptyView.getParent()).removeView(mEmptyView);
             isEmptyAttach = false;
@@ -95,7 +95,7 @@ public class EmptyView {
     }
 
     public void hideErrView() {
-        if (mErrView != null) {
+        if (mErrView != null && isErrAttach) {
             layoutParams.height = mLastHeight;
             ((ViewGroup) mErrView.getParent()).removeView(mErrView);
             isErrAttach = false;

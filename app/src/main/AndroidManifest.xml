@@ -17,6 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".LinearLayoutDemoActivity" />
+        <activity android:name=".RelativeLayoutDemoActivity" />
+        <activity android:name=".ShowCustomViewActivity" />
     </application>
 
 </manifest>
